@@ -10,6 +10,21 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --text-card-title: clamp(1.5rem, 7vw, 2.25rem);
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 cursor-pointer rounded-lg px-6 py-3 font-semibold transition;
+  }
+
+  .btn-primary {
+    @apply bg-red-600 text-white hover:bg-red-700;
+  }
+  .btn-secondary{
+    @apply border-2 border-red-600 text-red-600 hover:bg-red-600
+    hover:text-white;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
