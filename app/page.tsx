@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HomeActions from "@/app/HomeActions";
 
 export default function Home() {
   return (
@@ -10,10 +11,7 @@ export default function Home() {
       Welcome to CineConsensus!
     </h1>
       CineConsensus will help your Couch Council decide what movie to watch today.
-      <div className= "mt-8 flex flex-col gap-4 sm:flex-row">
-      <button className="btn btn-primary">Create new Couch Council</button>
-      <button className="btn btn-primary">Enter existing Couch Council</button>
-      </div>
+      <HomeActions />
     </div>
   );
 }
